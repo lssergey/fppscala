@@ -1,0 +1,6 @@
+*/.settings
+*/lib_managed
+*/project
+*/target
+.classpath
+.project
