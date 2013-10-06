@@ -1,6 +1,5 @@
 package funsets
 
-import common._
 
 /**
  * 2. Purely Functional Sets.
@@ -20,15 +19,13 @@ object FunSets {
   /**
    * Returns the set of the one given element.
    */
-  def singletonSet(elem: Int): Set = {
-    (y: Int) => elem == y
-  }
+  def singletonSet(elem: Int): Set = (x: Int) => elem == x
 
   /**
    * Returns the union of the two given sets,
    * the sets of all elements that are in either `s` or `t`.
    */
-  def union(s: Set, t: Set): Set = ???
+  def union(s: Set, t: Set): Set = (x: Int) => s(x) || t(x)
 
   /**
    * Returns the intersection of the two given sets,
